@@ -1,0 +1,10 @@
+npTDMS==1.6.0
+numpy==1.21.5
+pandas==1.4.3
+plotly==5.9.0
+scikit_learn==1.1.2
+scipy==1.7.3
+streamlit==1.13.0
+xlrd==2.0.1
+openpyxl
+statsmodels
