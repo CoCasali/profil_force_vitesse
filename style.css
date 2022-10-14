@@ -21,6 +21,7 @@
 
 .viewerBadge_container__1QSob {
     display: none !important;
+    opacity: 0;
 }
 
 /* tr th:nth-child(1),tr td:nth-child(1){
