@@ -566,7 +566,7 @@ if filename:
             )
         )
 
-        st.plotly_chart(fig, use_container_width=False)
+        st.plotly_chart(fig, use_container_width=True)
 
     if filename_2:
         with col2:
@@ -735,7 +735,7 @@ if filename:
                 )
             )
 
-            st.plotly_chart(fig, use_container_width=False)
+            st.plotly_chart(fig, use_container_width=True)
 
         st.markdown(f'<h2 style="background-color:{secondary_color};border-radius:14px;text-align:center;">{"CREATION DU 3ÈME ESSAI"}</h2>', unsafe_allow_html=True)
         cache1 = pd.DataFrame([x_1_0,y_1_0]).transpose()
@@ -855,8 +855,8 @@ if filename:
         m = st.markdown("""
                     <style>
                     div.stButton > button:first-child {
-                        background:linear-gradient(to bottom, {main_color} 5%, {main_color} 100%);
-                        background-color:{main_color};
+                        background:linear-gradient(to bottom, #424549 5%, #424549 100%);
+                        background-color:#424549;
                         border-radius:14px;
                         # display:inline-block;
                         margin: auto;
@@ -870,8 +870,8 @@ if filename:
                         text-shadow:0px 1px 0px #000000;
                     }
                     .myButton:hover {
-                        background:linear-gradient(to bottom, {main_color} 5%, {main_color} 100%);
-                        background-color:{main_color};
+                        background:linear-gradient(to bottom, #424549 5%, #424549 100%);
+                        background-color:#424549;
                     }
                     .myButton:active {
                         position:relative;
@@ -948,5 +948,5 @@ if filename:
         st.download_button(
             label="Download data as CSV",
             data=st.session_state.df.to_csv(index=False).encode('utf-8'),
-            file_name = "analyse_profil_force_vitesse.csv"
+            file_name = "[XLS]PFV.csv"
         )
