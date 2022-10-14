@@ -12,11 +12,11 @@
 }
 
 .dataframe {
-    width : 100%
+    width : 100%;
 }
 
 .viewerBadge_link__1S137 {
-    visibility: hidden;
+    display: none !important;
 }
 
 /* tr th:nth-child(1),tr td:nth-child(1){
